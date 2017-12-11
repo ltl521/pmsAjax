@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>我的订单</title>
+    <link rel="icon" type="image/x-icon" href="img/favicon.ico" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <script src="js/common.js"></script>
+    <script src="js/url.js"></script>
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/my-order.css">
+
+</head>
+<body>
+<div class="wrapper">
+    <div class="order-tab-head">
+        <div><p class="selected" id="stayorder" onclick="changeTab(0)">待入住</p></div>
+        <div><p id="allorder" onclick="changeTab(1)">全部</p></div>
+    </div>
+    <div class="order-tab-content">
+        <!--待入住订单-->
+        <div id="stay-in-orders" class="show">
+            <div></div>
+        </div>
+        <!--全部订单-->
+        <div id="total-orders">
+            <div></div>
+        </div>
+    </div>
+</div>
+</body>
+<script src="js/jquery-1.11.3.js"></script>
+<script src="js/my-order.js"></script>
+</html>
